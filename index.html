@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/153547211b.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/b9c018e32a.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            padding: 1px;
+            background-color: rgba(0,0,0,0.8);
+            filter: contrast(200%);
+            
+        }
+
+        body::before{
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background-image: url('./an.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        nav {
+            display: flex;
+            color: white;
+            width: calc(100vw - 10rem);
+            margin: 5rem 5rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .logo {
+            letter-spacing: 10px;
+            line-height: 30px;
+        }
+
+        .list ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .list ul li {
+            margin: 0px 2rem;
+        }
+
+        .mainArea {
+            width: 35%;
+            margin: 5rem auto;
+
+        }
+
+        .mainArea .main1 {
+            width: 50%;
+            color: white;
+            font-weight: bold;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .mainArea .main2 {
+            width: 50%;
+            color: white;
+            font-weight: bold;
+            font-size: 10rem;
+            letter-spacing: 25px;
+            margin: auto;
+        }
+
+        .mainArea .main3 {
+            width: 25%;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            margin: auto;
+            margin-left: auto;
+        }
+
+        footer{
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        footer .social ul li  a{
+            color: white;
+            text-decoration: none0;
+        }
+        footer .social ul li{
+            margin: 1rem 1rem;
+        }
+        footer .back {
+            width: 10%;
+            margin: auto;
+        }
+        footer .back button{
+            border: none;
+            background-color: transparent;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+
+        @media only screen and (max-width:1100px) {
+            .mainArea .main3 {
+                width: 40%;
+                color: white;
+                font-weight: bold;
+                font-size: 1rem;
+                margin: auto;
+                margin-left: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            A U
+            <br>
+            R A
+        </div>
+        <div class="list">
+            <ul>
+                <li>PROJECTS</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="mainArea">
+        <div class="main1">ERROR</div>
+        <div class="main2">404</div>
+        <div class="main3">SOMETHING WENT WRONG</div>
+    </section>
+
+    <footer>
+        <div class="social">
+            <ul>
+                <li> <a href=""><i class="fab fa-facebook"></i></a> </li>
+                <li> <a href=""><i class="fab fa-twitter"></i></a> </li>
+                <li> <a href=""><i class="fab fa-instagram"></i></a> </li>
+            </ul>
+        </div>
+        <div class="back">
+            <button>BACK</button>
+        </div>
+    </footer>
+</body>
+
+</html>
